@@ -19,10 +19,14 @@ export const ThemeContextProvider = props => {
 
   const setTheme = type => {
     setState({ ...state, theme: type === 'dark' ? theme.light : theme.dark })
+    localStorage.setItem("dark-mode", type);
+
   }
 
+
+
   const initState = {
-    theme: theme.light,
+    theme: "light",
     setTheme: setTheme
   }
 

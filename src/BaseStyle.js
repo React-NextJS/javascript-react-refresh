@@ -5,9 +5,9 @@ import { ThemeContext } from "./ThemeProvider";
 const BaseStyle = ({ children }) => {
   const state = useContext(ThemeContext);
 
-  localStorage.setItem("dark-mode", state.theme.type);
 
-  console.log(state.theme.type === "dark");
+
+  console.log(state)
 
   const dark = localStorage.getItem("dark-mode");
 
@@ -25,7 +25,7 @@ const BaseStyle = ({ children }) => {
           <textarea placeholder="Text Area"></textarea> <br />
           <button
             onClick={() => {
-              state.setTheme(state.theme.type);
+              state.setTheme(localStorage.getItem('dark-mode') === 'dark' ? 'light' : "dark");
             }}
           >
             Toggle Dark Mode

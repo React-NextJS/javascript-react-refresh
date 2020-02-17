@@ -7,6 +7,7 @@ import "./styles/global.scss";
 function App() {
   const state = useContext(ThemeContext)
 
+  console.log(state)
   
   return (
     <ThemeContextProvider state={state}>
