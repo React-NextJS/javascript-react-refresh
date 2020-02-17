@@ -1,0 +1,16 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+.three-col-grid{
+    max-width: $medium;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 1% 2%;
+    .grid-box{
+        width: 32%;
+        height: calc(19vw);
+        max-height: 200px;
+        background: $accent-color;
+    }
+}

@@ -1,0 +1,35 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+.base-style {
+    background: $background;
+
+    .base-style-container{
+        margin: 0px auto;
+        width: 1000px;
+        padding: 20px;
+    }
+}
+
+.dark {
+  background: rgb(29, 27, 36);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: $snow-white;
+  }
+
+  a {
+    color: $secondary-color;
+  }
+
+  a:hover {
+    color: $highlight;
+  }
+
+
+}

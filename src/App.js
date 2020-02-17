@@ -1,11 +1,20 @@
-import React from 'react';
-
+import React, {useContext} from "react";
+import { ThemeContextProvider, ThemeContext } from "./ThemeProvider";
+import BaseStyle from "./BaseStyle";
+import NewComponent from './NewComponent'
+import "./styles/global.scss";
 
 function App() {
-  return (
-    <div className="App">
+  const state = useContext(ThemeContext)
+
+  console.log(state)
   
-    </div>
+  return (
+    <ThemeContextProvider state={state}>
+        <BaseStyle>
+          <NewComponent />
+        </BaseStyle>
+    </ThemeContextProvider>
   );
 }
 
