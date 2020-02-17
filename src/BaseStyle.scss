@@ -2,12 +2,16 @@
 @import "./styles/mixins";
 
 .base-style {
+
+    .base-style-container{
+        margin: 0px auto;
+        width: 18%;
+        padding: 20px;
+    }
 }
 
 .dark {
   background: rgb(29, 27, 36);
-  height: 100vh;
-  overflow: hidden;
 
   h1,
   h2,

@@ -1,14 +1,44 @@
 import React, {useContext} from 'react'
 import {ThemeContext} from './ThemeProvider'
+import './NewComponent.scss'
 
 const NewComponent = () => {
     const state = useContext(ThemeContext)
     console.log(state)
 
     return (
-        <div>
-            <h1>awefawfe</h1>
+        <>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
         </div>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+        </div>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+        </div>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+        </div>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+        </div>
+        <div className="three-col-grid">
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+            <div className="grid-box"></div>
+        </div>
+        </>
     )
 }
 

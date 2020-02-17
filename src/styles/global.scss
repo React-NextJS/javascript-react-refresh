@@ -56,12 +56,16 @@ p, a{
 }
 
 a{
-    color: $primary-color;
+    color: $secondary-color;
     font-weight: 400;
 }
 
 a:hover{
-    color: $button-background-hover
+    color: darken($secondary-color, 15%)
+}
+
+a::selection{
+    background-color: $primary-color;
 }
 
 input, textarea{
