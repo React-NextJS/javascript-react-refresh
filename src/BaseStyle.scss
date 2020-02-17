@@ -2,10 +2,11 @@
 @import "./styles/mixins";
 
 .base-style {
+    background: $background;
 
     .base-style-container{
         margin: 0px auto;
-        width: 18%;
+        width: 1000px;
         padding: 20px;
     }
 }
